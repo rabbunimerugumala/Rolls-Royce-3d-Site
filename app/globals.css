@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: 0 0 0;
+    /* #000000 */
+    --foreground: 255 255 255;
+    /* #ffffff */
+}
+
+@layer base {
+    body {
+        @apply bg-black text-white antialiased overflow-x-hidden;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    /* Safe area padding for mobile notches */
+    .safe-top {
+        padding-top: env(safe-area-inset-top);
+    }
+
+    .safe-bottom {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    /* Hide scrollbar but allow scanning */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
