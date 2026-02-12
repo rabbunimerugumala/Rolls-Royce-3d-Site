@@ -13,6 +13,9 @@
     body {
         @apply bg-black text-white antialiased overflow-x-hidden;
     }
+    ::selection {
+        @apply bg-blue-500/30 text-white;
+    }
 }
 
 @layer utilities {

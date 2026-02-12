@@ -24,15 +24,15 @@ export default function Home() {
             {/* Footer / Final Section Buffer */}
             <motion.footer
                 style={{ opacity: footerOpacity }}
-                className="absolute bottom-0 w-full py-8 bg-black/90 backdrop-blur-xl border-t border-white/10 text-center text-white/40 text-xs z-20 flex flex-col gap-4 items-center justify-center pb-10"
+                className="absolute bottom-0 w-full py-10 bg-black/30 backdrop-blur-[30px] border-t border-white/10 text-center text-white/50 text-xs z-20 flex flex-col gap-6 items-center justify-center shadow-[0_-10px_40px_rgba(0,0,0,0.5)]"
             >
-                <div className="flex gap-6 uppercase tracking-widest text-[10px] hover:text-white/60 transition-colors cursor-pointer">
-                    <span>Privacy Policy</span>
-                    <span>Terms of Use</span>
-                    <span>Cookies</span>
-                    <span>Legal</span>
+                <div className="flex gap-8 uppercase tracking-[0.2em] text-[10px] hover:text-white transition-colors cursor-pointer font-medium">
+                    <span className="hover:text-blue-200 transition-colors">Privacy Policy</span>
+                    <span className="hover:text-blue-200 transition-colors">Terms of Use</span>
+                    <span className="hover:text-blue-200 transition-colors">Cookies</span>
+                    <span className="hover:text-blue-200 transition-colors">Legal</span>
                 </div>
-                <p>&copy; {new Date().getFullYear()} Rolls-Royce Motor Cars. Tribute Project.</p>
+                <p className="tracking-widest font-light">&copy; {new Date().getFullYear()} Rolls-Royce Motor Cars. Tribute Project.</p>
             </motion.footer>
         </main>
     );

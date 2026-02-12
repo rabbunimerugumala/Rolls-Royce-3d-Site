@@ -86,7 +86,7 @@ export default function CanvasSequence({ frameCount }: CanvasSequenceProps) {
     return (
         <canvas
             ref={canvasRef}
-            className="fixed top-0 left-0 w-full h-full object-cover z-0"
+            className="fixed top-0 left-0 w-full h-full object-cover z-0 brightness-110 contrast-105 saturate-[1.1]"
         />
     );
 }
